@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #338ab5;
+  height: 60px;
+  width: 100%;
+}
+
+.burger {
+  position: absolute;
+  margin-top: 2vh;
+  right: 10px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.line {
+  position: relative;
+  background-color: white;
+  height: 3px;
+  width: 30px;
+  margin: 5px;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 9px;
+  left: 10px;
+  border-radius: 40px;
+  height: 40px;
+  width: 40px;
+  background: #f9ffdb;
+}
+
+#laptop {
+  position: absolute;
+  width: 600px;
+  right: 20px;
+  margin-top: 120px;
+  animation: enter 0.8s ease-in;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 10;
+  }
+}
