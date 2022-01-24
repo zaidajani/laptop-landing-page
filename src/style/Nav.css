@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+nav {
+  background: #e5fcff;
+  height: 9vh;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.logo {
+  width: 20%;
+  margin-left: 5%;
+  font-family: "Mochiy Pop P One", sans-serif;
+  font-size: 18px;
+  color: rgb(139, 133, 137);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  margin-top: 3.5vh;
+}
+
+li a {
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #5c5a5b;
+}
+
+@media screen and (max-width: 728px) {
+  ul {
+    position: absolute;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: #e5fcff;
+    clip-path: circle(20px at 95% 5%);
+    -webkit-clip-path: circle(20px at 95% 5%);
+    transition: 1s ease-in-out;
+    pointer-events: none;
+  }
+
+  nav {
+    background: #e5fcff;
+    height: 64px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+
+  .logo {
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .line {
+    position: relative;
+    background-color: rgb(124, 143, 248);
+    height: 3px;
+    width: 30px;
+    margin: 5px;
+  }
+
+  .burger {
+    position: absolute;
+    margin-top: 2.5vh;
+    right: 10px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  ul.open {
+    background-color: #e5fcff;
+    clip-path: circle(1000px at 95% 5%);
+    -webkit-clip-path: circle(1000px at 95% 5%);
+    pointer-events: all;
+  }
+}
